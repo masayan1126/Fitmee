@@ -2,11 +2,11 @@ import React, { useCallback, useState, useEffect } from "react";
 
 const Top = () => {
   return (
-    <section
-      class="uc-bg-blue text-gray-700 body-font h-screen flex items-center sm:items-center"
-      id="top"
-    >
-      <div class="py-24 px-5 uc-fadein container mx-auto flex md:flex-row flex-col items-center">
+    <section class="uc-bg-blue text-gray-700 body-font h-screen flex items-center sm:items-center">
+      <div
+        class="py-24 px-5 uc-fadein container mx-auto flex md:flex-row flex-col items-center"
+        id="top"
+      >
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <img
             class="object-cover object-center rounded"
@@ -23,7 +23,7 @@ const Top = () => {
             現役のWEBエンジニアとデザイナーがお客様のアイデアをWEBサービスとして提供します。デザイン・コーディング双方の領域において、より高品質かつ専門性の高いプロダクトを作成する事が可能です。
           </p>
           <div class="flex justify-center">
-            <button class="inline-flex text-white uc-bg-orange border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <button class="inline-flex text-white uc-bg-orange border-0 py-4 px-6 focus:outline-none hover:bg-red-700 rounded text-xl">
               問い合わせする
             </button>
           </div>

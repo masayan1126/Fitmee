@@ -3,11 +3,8 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const Works = () => {
   return (
-    <section
-      class="uc-bg-blue text-gray-700 body-font h-auto sm:h-auto sm:flex sm:items-center"
-      id="works"
-    >
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <section class="uc-bg-blue text-gray-700 body-font h-auto sm:h-auto sm:flex sm:items-center">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap" id="works">
         <div class="flex w-full mb-10 flex-wrap">
           <h1 class="sm:text-4xl text-4xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
             Galally
@@ -22,6 +19,38 @@ const Works = () => {
               <img
                 alt="gallery"
                 class="w-full object-cover h-full object-center block"
+                src="/salon-lp.png"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="/salon-lp.png"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block"
+                src=""
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full">
+              <a href="https://salon-lp.vercel.app/">
+                <img
+                  alt="gallery"
+                  class="object-cover object-center block"
+                  src="/salon-lp.png"
+                />
+              </a>
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
                 src="/smartphonecaseshop.png"
               />
             </div>
@@ -29,37 +58,7 @@ const Works = () => {
               <img
                 alt="gallery"
                 class="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/501x301"
-              />
-            </div>
-            <div class="md:p-2 p-1 w-full">
-              <img
-                alt="gallery"
-                class="w-full h-full object-cover object-center block"
                 src="/recette.png"
-              />
-            </div>
-          </div>
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full">
-              <img
-                alt="gallery"
-                class="w-full h-full object-cover object-center block"
-                src="https://dummyimage.com/601x361"
-              />
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/502x302"
-              />
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/503x303"
               />
             </div>
           </div>

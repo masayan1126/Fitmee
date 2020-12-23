@@ -3,18 +3,15 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const Contact = () => {
   return (
-    <section
-      class="text-gray-700 body-font h-auto sm:h-screen sm:flex sm:items-center"
-      id="contact"
-    >
+    <section class="text-gray-700 body-font h-auto sm:h-screen sm:flex sm:items-center">
       <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+        <div class="flex flex-wrap -mx-4 -mb-10 text-center" id="contact">
           <div class="flex flex-col text-center w-full mb-20">
             <h1 class="sm:text-4xl text-4xl font-medium title-font mb-4 text-gray-900">
               Contact
             </h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr
+              お問い合わせ
             </p>
           </div>
           <div class="w-full sm:w-1/2 mb-10 px-12 sm:px-10">

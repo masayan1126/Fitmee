@@ -46,7 +46,7 @@ const Service = () => {
               <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
                 WEB制作
               </h2>
-              <p class="leading-relaxed text-base">
+              <p class="leading-relaxed text-base px-8">
                 ランディングページ、ホームページ、ECサイトなどのWEBサイト制作を承っております
               </p>
               {/* <a class="mt-3 text-indigo-500 inline-flex items-center">
@@ -73,10 +73,8 @@ const Service = () => {
               <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
                 WEBアプリ開発
               </h2>
-              <p class="leading-relaxed text-base">
-                Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                banh mi pug VHS try-hard.
+              <p class="leading-relaxed text-base px-8">
+                中小規模のWEBアプリケーションを承っております
               </p>
               {/* <a class="mt-3 text-indigo-500 inline-flex items-center">
                 Learn More
@@ -102,7 +100,7 @@ const Service = () => {
               <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
                 WEBデザイン
               </h2>
-              <p class="leading-relaxed text-base">
+              <p class="leading-relaxed text-base px-8">
                 Blue bottle crucifix vinyl post-ironic four dollar toast vegan
                 taxidermy. Gastropub indxgo juice poutine, ramps microdosing
                 banh mi pug VHS try-hard.
