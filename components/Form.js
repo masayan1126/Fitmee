@@ -17,7 +17,8 @@ const Form = () => {
     "any-header": "付加したいヘッダー",
   };
 
-  const showForm = () => {
+  const showForm = (event) => {
+    event.preventDefault();
     if (password !== pass) {
       alert("パスワードが誤っています");
       return;
@@ -41,7 +42,7 @@ const Form = () => {
           認証画面
         </div>
         <div class="mt-10">
-          <form onSubmit={showForm}>
+          <form onSubmit={(event) => showForm(event)}>
             <div class="flex flex-col mb-6">
               <label
                 for="password"
