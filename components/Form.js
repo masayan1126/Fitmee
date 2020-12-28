@@ -1,9 +1,29 @@
 import React, { useCallback, useState, useEffect } from "react";
+import axios from "axios";
 // import sneaker from "../public/sneaker.jpg";
 
 const Form = () => {
   const pass = "zFeidjS937464";
   const [password, setPassword] = useState("");
+  const inputPassword = useCallback(
+    (event) => {
+      setPassword(event.target.value);
+    },
+    [setPassword]
+  );
+
+  const showForm = () => {
+    if (password !== pass) {
+      alert("パスワードが誤っています");
+      return;
+    }
+    axios
+      .post(`https://tailwind-components.vercel.app/gallery`, pass)
+      .then((res) => {
+        console.log(res);
+        console.log(res.data);
+      });
+  };
 
   return (
     <div class="min-h-screen flex flex-col items-center bg-gray-300">
@@ -12,10 +32,7 @@ const Form = () => {
           認証画面
         </div>
         <div class="mt-10">
-          <form
-            action="https://tailwind-components.vercel.app//gallery"
-            method="post"
-          >
+          <form>
             <div class="flex flex-col mb-6">
               <label
                 for="password"
@@ -30,13 +47,14 @@ const Form = () => {
                   name="password"
                   class="text-sm sm:text-base placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400"
                   value={password}
+                  onChange={inputPassword}
                 />
               </div>
             </div>
-
             <div class="flex w-full">
               <button
-                type="submit"
+                onClick={() => showForm()}
+                type="button"
                 class="flex items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-600 hover:bg-blue-700 rounded py-2 w-full transition duration-150 ease-in"
               >
                 <span class="mr-2 uppercase">完了</span>
