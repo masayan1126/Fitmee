@@ -2,13 +2,23 @@ import React, { useCallback, useState, useEffect } from "react";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const Works = () => {
+  const showForm = () => {
+    const showFormLink = document.getElementById("show-form-link");
+    showFormLink.preventDefault();
+  };
+
   return (
     <section class="uc-bg-blue text-gray-700 body-font h-auto sm:h-auto sm:flex sm:items-center">
       <div class="container px-5 py-24 mx-auto flex flex-wrap" id="works">
-        <div class="flex w-full mb-10 flex-wrap">
+        <div class="flex w-full mb-10 flex-wrap space-x-4 justify-between">
           <h1 class="sm:text-4xl text-4xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
-            Galally
+            Gallery
           </h1>
+          <div>
+            <a id="show-form-link" onClick={() => showForm()} href="/forms">
+              すべて見る
+            </a>
+          </div>
           {/* <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
             これまでの制作物です
           </p> */}
