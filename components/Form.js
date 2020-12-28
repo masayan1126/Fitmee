@@ -12,14 +12,14 @@ const Form = () => {
     [setPassword]
   );
 
-  const showForm = async () => {
+  const showForm = (event) => {
+    event.preventDefault();
     if (password !== pass) {
       alert("パスワードが誤っています");
       return;
     }
-
-    await axios
-      .post(`https://tailwind-components.vercel.app/gallery`, pass)
+    axios
+      .post(`https://tailwind-components.vercel.app/gallery`, { pass })
       .then((res) => {
         console.log(res);
         console.log(res.data);
@@ -33,7 +33,7 @@ const Form = () => {
           認証画面
         </div>
         <div class="mt-10">
-          <form>
+          <form onSubmit={showForm}>
             <div class="flex flex-col mb-6">
               <label
                 for="password"
@@ -54,8 +54,7 @@ const Form = () => {
             </div>
             <div class="flex w-full">
               <button
-                onClick={() => showForm()}
-                type="button"
+                type="submit"
                 class="flex items-center justify-center focus:outline-none text-white text-sm sm:text-base bg-blue-600 hover:bg-blue-700 rounded py-2 w-full transition duration-150 ease-in"
               >
                 <span class="mr-2 uppercase">完了</span>
