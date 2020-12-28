@@ -12,10 +12,10 @@ const Form = () => {
     [setPassword]
   );
 
-  const headers = {
-    "Content-Type": "application/json",
-    "any-header": "付加したいヘッダー",
-  };
+  // const headers = {
+  //   "Content-Type": "application/json",
+  //   "any-header": "付加したいヘッダー",
+  // };
 
   const showForm = (event) => {
     event.preventDefault();
@@ -24,15 +24,10 @@ const Form = () => {
       return;
     }
 
-    axios
-      .post(
-        `https://tailwind-components.vercel.app/gallery`,
-        { pass },
-        { headers: headers }
-      )
-      .then((res) => {
-        console.log(res);
-      });
+    axios.post("http://localhost:3000/gallery", { pass }).then((res) => {
+      // window.location.pathname = "/gallery";
+      console.log(res.data);
+    });
   };
 
   return (
@@ -42,7 +37,7 @@ const Form = () => {
           認証画面
         </div>
         <div class="mt-10">
-          <form onSubmit={(event) => showForm(event)}>
+          <form onSubmit={showForm}>
             <div class="flex flex-col mb-6">
               <label
                 for="password"
