@@ -2,6 +2,13 @@ import React, { useCallback, useState, useEffect } from "react";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 const Works = () => {
+  // const showForm = () => {
+  //   const value = window.prompt();
+  //   if (value == "zFeidjS937464") {
+  //     window.location.pathname = "/gallery";
+  //   }
+  // };
+
   return (
     <section class="uc-bg-blue text-gray-700 body-font h-auto sm:h-auto sm:flex sm:items-center">
       <div class="container px-5 py-24 mx-auto flex flex-wrap" id="works">
@@ -10,7 +17,7 @@ const Works = () => {
             Gallery
           </h1>
           <div>
-            <a id="show-form-link" onClick={() => showForm()} href="/forms">
+            <a id="show-form-link" href="/form"></a>
               すべて見る
             </a>
           </div>

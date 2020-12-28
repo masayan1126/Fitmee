@@ -12,17 +12,25 @@ const Form = () => {
     [setPassword]
   );
 
-  const showForm = (event) => {
-    event.preventDefault();
+  const headers = {
+    "Content-Type": "application/json",
+    "any-header": "付加したいヘッダー",
+  };
+
+  const showForm = () => {
     if (password !== pass) {
       alert("パスワードが誤っています");
       return;
     }
+
     axios
-      .post(`https://tailwind-components.vercel.app/gallery`, { pass })
+      .post(
+        `https://tailwind-components.vercel.app/gallery`,
+        { pass },
+        { headers: headers }
+      )
       .then((res) => {
         console.log(res);
-        console.log(res.data);
       });
   };
 
@@ -33,7 +41,7 @@ const Form = () => {
           認証画面
         </div>
         <div class="mt-10">
-          <form onSubmit={(event) => showForm(event)}>
+          <form onSubmit={showForm}>
             <div class="flex flex-col mb-6">
               <label
                 for="password"
