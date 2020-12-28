@@ -17,7 +17,7 @@ const Works = () => {
             Gallery
           </h1>
           <div>
-            <a id="show-form-link" href="/form"></a>
+            <a id="show-form-link" href="/form">
               すべて見る
             </a>
           </div>
