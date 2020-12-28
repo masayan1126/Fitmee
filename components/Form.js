@@ -33,7 +33,7 @@ const Form = () => {
           認証画面
         </div>
         <div class="mt-10">
-          <form onSubmit={showForm}>
+          <form onSubmit={(event) => showForm(event)}>
             <div class="flex flex-col mb-6">
               <label
                 for="password"
