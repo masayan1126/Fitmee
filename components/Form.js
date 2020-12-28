@@ -12,12 +12,13 @@ const Form = () => {
     [setPassword]
   );
 
-  const showForm = () => {
+  const showForm = async () => {
     if (password !== pass) {
       alert("パスワードが誤っています");
       return;
     }
-    axios
+
+    await axios
       .post(`https://tailwind-components.vercel.app/gallery`, pass)
       .then((res) => {
         console.log(res);
