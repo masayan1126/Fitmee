@@ -24,7 +24,7 @@ const Form = () => {
       return;
     }
 
-    axios.post("http://localhost:3000/gallery", { pass }).then((res) => {
+    axios.post("http://localhost:3000/data", { pass }).then((res) => {
       // window.location.pathname = "/gallery";
       console.log(res.data);
     });
